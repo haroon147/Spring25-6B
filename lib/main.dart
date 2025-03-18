@@ -1,13 +1,32 @@
 import 'package:flutter/material.dart';
 import 'package:sixb_class_practice/home.dart';
 import 'package:sixb_class_practice/mycustom.dart';
+import 'package:sixb_class_practice/week4/week4home.dart';
 // void main(){
 //   runApp(MyCustomWidget());
 // }
 
 void main(){
-  runApp(HomePage());
+  runApp(MyApp());
 }
+class MyApp extends StatefulWidget {
+  const MyApp({super.key});
+
+  @override
+  State<MyApp> createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Week4Home(),
+    );
+  }
+}
+
+
+
 
 
 // void main() {
