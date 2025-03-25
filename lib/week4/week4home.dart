@@ -10,12 +10,12 @@ class Week4Home extends StatefulWidget {
 class _Week4HomeState extends State<Week4Home> {
   @override
   Widget build(BuildContext context) {
-    var myStyle = TextStyle(
+    var myStyle = const TextStyle(
         fontSize: 30, fontWeight: FontWeight.bold, color: Color(0xff5bd6fd));
-    var myFavColor = Color(0xFFA93E3E);
+    var myFavColor = const Color(0xFFA93E3E);
     return Scaffold(
       appBar: AppBar(
-        title: Text("Week 4 MAD"),
+        title: const Text("Week 4 MAD"),
         backgroundColor: Colors.pinkAccent,
       ),
       body: Center(
@@ -29,7 +29,7 @@ class _Week4HomeState extends State<Week4Home> {
                 style: myStyle,
               ),
               Padding(
-                padding: EdgeInsets.symmetric(horizontal: 30),
+                padding: const EdgeInsets.symmetric(horizontal: 30),
                 child: TextField(
                   enabled: true,
                   keyboardType: TextInputType.emailAddress,
@@ -42,21 +42,21 @@ class _Week4HomeState extends State<Week4Home> {
                           width: 5,
                         ),
                       ),
-                      focusedBorder: OutlineInputBorder(
+                      focusedBorder: const OutlineInputBorder(
                         borderSide: BorderSide(color: Colors.black38, width: 20),
                       ),
                       border: OutlineInputBorder(
                         borderSide: BorderSide(width: 5, color: myFavColor),
                       ),
-                      label: Text("EMail"),
+                      label: const Text("EMail"),
                       hintText: ("Enter Email...."),
-                      suffixIcon: Icon(Icons.email),
+                      suffixIcon: const Icon(Icons.email),
                       prefixIcon: InkWell(
                           onTap: () {
                             ScaffoldMessenger.of(context).showSnackBar(
-                                SnackBar(content: Text("Dont touch meee")));
+                                const SnackBar(content: Text("Dont touch meee")));
                           },
-                          child: Icon(Icons.email_outlined))),
+                          child: const Icon(Icons.email_outlined))),
                 ),
               ),
               TextField(
@@ -65,12 +65,12 @@ class _Week4HomeState extends State<Week4Home> {
                     enabledBorder: OutlineInputBorder(
                         borderSide: BorderSide(width: 5, color: myFavColor))),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 30,
               ),
               GestureDetector(
                 onDoubleTap: (){
-                  AlertDialog(actions: [
+                  const AlertDialog(actions: [
                     Text("Hello"),
                   ],);
                 },
