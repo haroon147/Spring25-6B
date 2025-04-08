@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:sixb_class_practice/Week6/screen_one.dart';
+import 'package:sixb_class_practice/Week6/week_six_home.dart';
 import 'package:sixb_class_practice/home.dart';
 import 'package:sixb_class_practice/mycustom.dart';
 import 'package:sixb_class_practice/week4/week4home.dart';
+import 'package:sixb_class_practice/week5/week_five_home.dart';
 // void main(){
 //   runApp(MyCustomWidget());
 // }
@@ -9,6 +12,11 @@ import 'package:sixb_class_practice/week4/week4home.dart';
 void main(){
   runApp(MyApp());
 }
+
+
+
+
+
 class MyApp extends StatefulWidget {
   const MyApp({super.key});
 
@@ -20,7 +28,13 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Week4Home(),
+      initialRoute: "home",
+      // home: WeekSixHome(),
+
+      routes: {
+        "home":(context)=> WeekSixHome(),
+        'screenOne':(context)=> ScreenOne(),
+      },
     );
   }
 }
