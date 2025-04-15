@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:sixb_class_practice/Week6/screen_one.dart';
 import 'package:sixb_class_practice/Week6/week_six_home.dart';
+import 'package:sixb_class_practice/Week7home/week7home.dart';
 import 'package:sixb_class_practice/home.dart';
 import 'package:sixb_class_practice/mycustom.dart';
 import 'package:sixb_class_practice/week4/week4home.dart';
@@ -32,7 +33,7 @@ class _MyAppState extends State<MyApp> {
       // home: WeekSixHome(),
 
       routes: {
-        "home":(context)=> WeekSixHome(),
+        "home":(context)=> Week7Home(),
         'screenOne':(context)=> ScreenOne(),
       },
     );
